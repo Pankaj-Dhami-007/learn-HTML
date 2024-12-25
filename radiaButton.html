@@ -1,0 +1,59 @@
+<!--If you want to give the option to select only one field from the multiple
+options available to the user then the radio button is used.
+
+If you have a long list of options and you have to allow select only one
+option then there you will use select input type instead of showing a lot of
+radio buttons.
+For example, suppose you want to add a list of the cities to select user city,
+then you will choose select form control instead of radio buttons.
+
+The <select> element creates the dropdown list.
+Each <option> inside the <select> represents an individual city that the user can choose from.
+The value attribute defines the value that will be submitted when the form is sent.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form>
+            <p>Select your gender:</p>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            
+            <input type="submit" value="Submit">
+          </form>
+          
+    </section>
+
+    <form>
+        <p>Select your city:</p>
+        
+        <select name="city">
+          <option value="newyork">New York</option>
+          <option value="losangeles">Los Angeles</option>
+          <option value="chicago">Chicago</option>
+          <option value="houston">Houston</option>
+          <option value="miami">Miami</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+    <section>
+        
+    </section>
+</body>
+</html>
